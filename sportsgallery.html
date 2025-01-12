@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height:100%;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+/* Preview Modal */
+.preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.preview.active {
+  display: flex;
+}
+
+.preview-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+ /* Header and Footer Styling */
+ header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+  border: 2px solid white;
+  margin-right: 20px;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.header-text {
+  text-align: left;
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+    
+
+    footer {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+.gallery-item p {
+  text-align: center; /* Center the text */
+  font-size: 14px;    /* Adjust the font size */
+  color: #333;        /* Change the color */
+  margin-top: 8px;    /* Add spacing above the text */
+}
+
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Picture Gallery</title>
+  <link rel="icon" type="image/png" href="WhatsApp Image 2024-11-27 at 00.03.44.jpeg">
+</head>
+<body>
+  <!-- Header -->
+  
+  <header>
+    <img src="WhatsApp Image 2024-11-27 at 00.03.44.jpeg" alt="Chitkara University Logo" class="logo">
+    <div class="header-text">
+        <h1>SPORTS EVENT GALLERY</h1>
+    </div>
+  </header>
+  <div class="gallery">
+    <div class="gallery-item" onclick="openPreview('sports.jpg', 'Cricket match winner')">
+      <img src="sports.jpg" alt="Image 1">
+      <p class="caption">Cricket match winner</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports1.jpg', 'Football Championship Highlights')">
+      <img src="sports1.jpg" alt="Image 2">
+      <p class="caption">Football Championship Highlights</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports2.jpg', 'Basketball Team Victory')">
+      <img src="sports2.jpg" alt="Image 3">
+      <p class="caption">Basketball Team Victory</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports3.jpg', 'Volleyball Match in Action')">
+      <img src="sports3.jpg" alt="Image 4">
+      <p class="caption">Volleyball Match in Action</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sports5.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew1.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew2.jpg"Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew3.jpg"Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew4.pg.jpg"Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.5.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.6.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.7.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.8.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.9.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.10.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.11.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    <div class="gallery-item" onclick="openPreview('sports5.jpg', 'Athletics Track Event')">
+      <img src="sportsnew.12.jpg" alt="Image 5">
+      <p class="caption">Athletics Track Event</p>
+    </div>
+    
+    <!-- Repeat for other images... -->
+  </div>
+  
+    </div>
+
+    <!-- Fullscreen Preview -->
+    <div class="preview" id="preview">
+      <span class="close" id="close">&times;</span>
+      <img class="preview-image" id="preview-image" src="" alt="Preview">
+    </div>
+  </div>
+ 
+  <footer>
+    <p>&copy; 2024 Chitkara University, Himachal Pradesh. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="icon" type="image/png" href="WhatsApp Image 2024-11-27 at 00.03.44.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#e6f7ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+  border: 2px solid white;
+  margin-right: 20px;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.header-text {
+  text-align: left;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+        .registration-form {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .registration-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .registration-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .registration-form input, .registration-form select, .registration-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="WhatsApp Image 2024-11-27 at 00.03.44.jpeg" alt="Chitkara University Logo" class="logo">
+        <div class="header-text">
+            <h1>Event Registration</h1>
+        </div>
+    </header>
+    <main>
+<div class="registration-form">
+    <h2></h2>
+    <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="event">Select Event</label>
+        <select id="event" name="event">
+            <option value="Horticulture">Horticulture</option>
+            <option value="Cultural Fest">Cultural Fest</option>
+            <option value="Sports Meet">Sports Meet</option>
+            <option value="Technical Workshop">Technical Workshop</option>
+            <option value="Science Expo">Science Expo</option>
+            <option value="Hackathon">Hackathon</option>
+        </select>
+
+        <label for="roll no">College ID</label>
+        <input type="text" name="roll no" placeholder="Enter your college id" rows="4"></textarea>
+
+        <button type="button" onclick="window.location.href='newpage.html';">Register</button>
+
+    </form>
+</div>
+</main>
+</body>
+</html>
