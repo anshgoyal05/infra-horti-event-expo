@@ -33,5 +33,8 @@ _Homepage of Infra-Horti Event Expo_
 ## Contributions
 Contributions are welcome! Please feel free to fork the repository and submit a pull request.
 
-## Contact
-Created by [Ansh Goyal](https://github.com/anshgoyal05) - feel free to reach out!
+## Contributors
+- [Ansh Goyal](https://github.com/anshgoyal05) - Project Lead, Styling, Design(CSS) and Data collection(Events)
+- Arman Ohri - Structure, Layout (HTML) and Data collection (Infrastructure)
+- Anshul Sharma - Interactivity, Enhancements(CSS) and Data collection (Horticulture)
+- Anuj - Data collection (Horticulture)
