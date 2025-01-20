@@ -23,7 +23,7 @@ Check out the live project [here](https://anshgoyal05.github.io/infra-horti-even
 2. Open `index.html` in your browser.
 
 ## Screenshots
-![Homepage](https://via.placeholder.com/800x400)  
+![Homepage](home_page.png)  
 _Homepage of Infra-Horti Event Expo_
 
 ## Future Enhancements
