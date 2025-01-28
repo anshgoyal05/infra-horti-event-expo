@@ -36,5 +36,5 @@ Contributions are welcome! Please feel free to fork the repository and submit a 
 ## Contributors
 - [Ansh Goyal](https://github.com/anshgoyal05) - Project Lead, Styling, Design(CSS) and Data collection(Events)
 - Arman Ohri - Structure, Layout (HTML) and Data collection (Infrastructure)
-- Anshul Sharma - Interactivity, Enhancements(CSS) and Data collection (Horticulture)
+- [Anshul Sharma](https://github.com/Anshul39) - Interactivity, Enhancements(CSS) and Data collection (Horticulture)
 - Anuj - Data collection (Horticulture)
